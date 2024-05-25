@@ -26,12 +26,49 @@
     </header>
 
     <main>
-        
+        <div id="consejos-generales-info" style="display: none;">
+            <h2>Información básica y consejos para mantener la seguridad en línea</h2>
+            <p>En esta sección encontrarás información esencial sobre cómo mantenerte seguro en internet. 
+                Sigue estos consejos para proteger tu información personal, evitar fraudes y amenazas online.</p>
+
+            <h3>Consejos básicos:</h3>
+            <ul>
+                <li>Utiliza contraseñas seguras y únicas para cada cuenta.</li>
+                <li>Mantén tu software actualizado, incluyendo el sistema operativo, navegador y antivirus.</li>
+                <li>Ten cuidado con los enlaces y archivos adjuntos sospechosos en correos electrónicos y mensajes.</li>
+                <li>No compartas información personal en sitios web o con personas que no conoces.</li>
+                <li>Sé precavido con las ofertas online que parecen demasiado buenas para ser verdad.</li>
+            </ul>
+
+            <h3>Prácticas seguras en línea:</h3>
+            <p>Además de los consejos básicos, es importante adoptar prácticas seguras en tu actividad online diaria. 
+                Sigue estas recomendaciones:</p>
+            <ul>
+                <li>Utiliza una red Wi-Fi segura cuando te conectes en lugares públicos.</li>
+                <li>Ten cuidado al realizar compras online y verifica la reputación del sitio web.</li>
+                <li>Mantén tu información personal privada, como tu número de tarjeta de crédito o dirección.</li>
+                <li>Instala un software de seguridad confiable y mantenlo actualizado.</li>
+                <li>Sé consciente de las últimas amenazas y fraudes online.</li>
+            </ul>
+        </div>
         </main>
 
     <footer>
         <p>&copy; 2024 Todos los derechos reservados</p>
     </footer>
+    <script>
+        const consejosGeneralesLink = document.querySelector('#consejos-generales');
+
+        consejosGeneralesLink.addEventListener('click', function() {
+            mostrarInformacionConsejosGenerales();
+        });
+
+        function mostrarInformacionConsejosGenerales() {
+            const infoSeccion = document.getElementById('consejos-generales-info');
+            infoSeccion.style.display = 'block';
+        }
+    </script>
+
 </body>
 </html>
 
