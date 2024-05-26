@@ -1,75 +1,157 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seguridad en la Web</title>
-    <h1>¡Tu seguridad en la web!</h1>
-    <p>En este sitio web encontrarás información sobre las amenazs y riesgos en informatica, y proporcionarles las herramientas 
-        y estrategias necesarias para navegar por internet de forma segura y proteger su información personal.
-    </p>
-        
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Tu seguridad en la web!</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .nav a {
+      text-decoration: none;
+      color: black;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .nav a:hover {
+      background-color: #f0f0f0;
+    }
+    .content {
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      display: none;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="consejos-generales.html">Consejos generales</a></li>
-                <li><a href="proteccion-contrasenas.html">Protección de contraseñas</a></li>
-                <li><a href="seguridad-redes-sociales.html">Seguridad en redes sociales</a></li>
-                <li><a href="proteccion-malware.html">Protección contra malware</a></li>
-                <li><a href="recursos.html">Recursos y enlaces útiles</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="container">
+    <h1 class="header">¡Tu seguridad en la web!</h1>
+    <nav class="nav">
+      <a href="#" id="consejosGeneralesLink">Consejos generales</a>
+      <a href="#" id="proteccionContraseniasLink">Protección de contraseñas</a>
+      <a href="#" id="seguridadRedesSocialesLink">Seguridad en redes sociales</a>
+      <a href="#" id="proteccionMalwareLink">Protección contra malware</a>
+      <a href="#" id="recursosEnlacesLink">Recursos y enlaces útiles</a>
+    </nav>
+    <div id="consejosGenerales" class="content">
+      <h2>Consejos generales</h2>
+      <h2>Información básica y consejos para mantener la seguridad en línea</h2>
+    <p>En este sitio web encontrarás información sobre las amenazas y vulnerabilidades que existen en Internet, así como consejos prácticos para protegerte y mantener tu seguridad en línea.</p>
+    <p>Algunos de los temas que se abordan en esta sección son:</p>
+    <ul>
+      <li>Cómo crear contraseñas seguras y protegerlas</li>
+      <li>Cómo identificar y evitar sitios web fraudulentos</li>
+      <li>Cómo protegerte del malware y otras amenazas</li>
+      <li>Cómo configurar tu navegador y tu sistema operativo de forma segura</li>
+      <li>Cómo mantenerte actualizado sobre las últimas amenazas y vulnerabilidades</li>
+    </ul>
+    </div>
+    <div id="proteccionContrasenias" class="content">
+      <h2>Protección de Contraseñas</h2>
+  <h3>¡Protege tus cuentas en internet con contraseñas fuertes!</h3>
+  <p>Para crear una contraseña segura, sigue estos consejos:</p>
+  <ul>
+    <li>📝 Usa una frase larga en lugar de una sola palabra. Por ejemplo: "MiPerritoJuguetónCorre"</li>
+    <li>🔢 Agrega números y símbolos a tu frase: "MiPerrit0Juguet$nCorr3"</li>
+    <li>🔀 Mezcla mayúsculas y minúsculas: "miPerrit0juGUet$nCorr3"</li>
+    <li>❌ Evita usar datos personales como tu nombre, fecha de nacimiento o palabras comunes del diccionario.</li>
+    <li>🔑 Usa una contraseña diferente para cada cuenta importante.</li>
+    <li>📁 Considera utilizar un administrador de contraseñas para guardarlas de forma segura.</li>
+    <li>🔄 Cambia tus contraseñas cada cierto tiempo, al menos una vez al año.</li>
+    <li>🤫 Nunca compartas tus contraseñas con nadie, ni siquiera con amigos o familiares.</li>
+  </ul>
+  <p>¡Sigue estos sencillos pasos y tus cuentas estarán más protegidas!</p>
+    </div>
 
-    <main>
-        <div id="consejos-generales-info" style="display: none;">
-            <h2>Información básica y consejos para mantener la seguridad en línea</h2>
-            <p>En esta sección encontrarás información esencial sobre cómo mantenerte seguro en internet. 
-                Sigue estos consejos para proteger tu información personal, evitar fraudes y amenazas online.</p>
+    <div id="seguridadRedesSociales" class="content">
+      <h2>Seguridad en redes sociales</h2>
+      <h3>¡Navega y comparte de forma segura!</h3>
+  <p>Sigue estos sencillos consejos para estar protegido en las redes sociales:</p>
+  <ul>
+    <li>👤 Configura tu privacidad: ajusta quién puede ver tus publicaciones y mantén tus datos personales privados.</li>
+    <li>🤝 Acepta amigos con cuidado: verifica que sean personas reales y conocidas antes de aceptar solicitudes.</li>
+    <li>🔐 Usa contraseñas fuertes: crea contraseñas seguras y diferentes para cada red social.</li>
+    <li>⚠️ Desconfía de enlaces sospechosos: pueden ser intentos de robo de información (phishing).</li>
+    <li>📸 Piensa antes de publicar: evita compartir contenido inapropiado o comprometedor.</li>
+    <li>🌍 Cuida tu ubicación: desactiva la geoubicación y no etiquetes lugares sensibles.</li>
+    <li>🙂 Sé amable: mantén una actitud respetuosa y evita discusiones agresivas o acoso.</li>
+  </ul>
+  <p>¡Diviértete y comparte con tranquilidad siguiendo estas recomendaciones!</p>
+    </div>
+    <div id="proteccionMalware" class="content">
+      <h2>Protección contra malware</h2>
+      <!-- Contenido sobre protección contra malware -->
+    </div>
+    <div id="recursosEnlaces" class="content">
+      <h2>Recursos y enlaces útiles</h2>
+      <!-- Contenido sobre recursos y enlaces útiles -->
+    </div>
+  </div>
 
-            <h3>Consejos básicos:</h3>
-            <ul>
-                <li>Utiliza contraseñas seguras y únicas para cada cuenta.</li>
-                <li>Mantén tu software actualizado, incluyendo el sistema operativo, navegador y antivirus.</li>
-                <li>Ten cuidado con los enlaces y archivos adjuntos sospechosos en correos electrónicos y mensajes.</li>
-                <li>No compartas información personal en sitios web o con personas que no conoces.</li>
-                <li>Sé precavido con las ofertas online que parecen demasiado buenas para ser verdad.</li>
-            </ul>
+  <script>
+    // Obtener referencias a los enlaces de navegación
+    const consejosGeneralesLink = document.getElementById('consejosGeneralesLink');
+    const proteccionContraseniasLink = document.getElementById('proteccionContraseniasLink');
+    const seguridadRedesSocialesLink = document.getElementById('seguridadRedesSocialesLink');
+    const proteccionMalwareLink = document.getElementById('proteccionMalwareLink');
+    const recursosEnlacesLink = document.getElementById('recursosEnlacesLink');
 
-            <h3>Prácticas seguras en línea:</h3>
-            <p>Además de los consejos básicos, es importante adoptar prácticas seguras en tu actividad online diaria. 
-                Sigue estas recomendaciones:</p>
-            <ul>
-                <li>Utiliza una red Wi-Fi segura cuando te conectes en lugares públicos.</li>
-                <li>Ten cuidado al realizar compras online y verifica la reputación del sitio web.</li>
-                <li>Mantén tu información personal privada, como tu número de tarjeta de crédito o dirección.</li>
-                <li>Instala un software de seguridad confiable y mantenlo actualizado.</li>
-                <li>Sé consciente de las últimas amenazas y fraudes online.</li>
-            </ul>
-        </div>
-        </main>
+    // Obtener referencias a las secciones de contenido
+    const consejosGenerales = document.getElementById('consejosGenerales');
+    const proteccionContrasenias = document.getElementById('proteccionContrasenias');
+    const seguridadRedesSociales = document.getElementById('seguridadRedesSociales');
+    const proteccionMalware = document.getElementById('proteccionMalware');
+    const recursosEnlaces = document.getElementById('recursosEnlaces');
 
-    <footer>
-        <p>&copy; 2024 Todos los derechos reservados</p>
-    </footer>
-    <script>
-        const consejosGeneralesLink = document.querySelector('#consejos-generales');
+    // Función para mostrar/ocultar el contenido
+    function mostrarContenido(seccion) {
+      // Ocultar todas las secciones
+      consejosGenerales.style.display = 'none';
+      proteccionContrasenias.style.display = 'none';
+      seguridadRedesSociales.style.display = 'none';
+      proteccionMalware.style.display = 'none';
+      recursosEnlaces.style.display = 'none';
 
-        consejosGeneralesLink.addEventListener('click', function() {
-            mostrarInformacionConsejosGenerales();
-        });
+      // Mostrar la sección seleccionada
+      seccion.style.display = 'block';
+    }
 
-        function mostrarInformacionConsejosGenerales() {
-            const infoSeccion = document.getElementById('consejos-generales-info');
-            infoSeccion.style.display = 'block';
-        }
-    </script>
-
+    // Agregar controladores de eventos a los enlaces
+    consejosGeneralesLink.addEventListener('click', function() {
+      mostrarContenido(consejosGenerales);
+    });
+    proteccionContraseniasLink.addEventListener('click', function() {
+      mostrarContenido(proteccionContrasenias);
+    });
+    seguridadRedesSocialesLink.addEventListener('click', function() {
+      mostrarContenido(seguridadRedesSociales);
+    });
+    proteccionMalwareLink.addEventListener('click', function() {
+      mostrarContenido(proteccionMalware);
+    });
+    recursosEnlacesLink.addEventListener('click', function() {
+      mostrarContenido(recursosEnlaces);
+    });
+  </script>
 </body>
 </html>
+
 
 
