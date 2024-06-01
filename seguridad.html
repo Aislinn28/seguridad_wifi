@@ -64,6 +64,7 @@
       <a href="#" id="recursosEnlacesLink">Recursos y enlaces útiles</a>
     </nav>
     <div id="consejosGenerales" class="content">
+      <span style="color: rgb(253, 252, 252)">
       <h2>Consejos generales</h2>
       <h3>¡Mantente protegido en línea con estos consejos básicos!</h3>
   <p>Sigue estas recomendaciones para disfrutar de una experiencia segura en internet:</p>
@@ -78,8 +79,11 @@
     <li>🔄 <strong>Realiza copias de seguridad</strong>: Respalda regularmente tus archivos importantes en caso de pérdida o daños.</li>
   </ul>
   <p>¡Sigue estas sencillas recomendaciones y disfruta de una experiencia en línea segura y tranquila!</p>
+</span>
+
     </div>
     <div id="proteccionContrasenias" class="content">
+      <span style="color: rgb(253, 252, 252)">
       <h2>Protección de Contraseñas</h2>
   <h3>¡Protege tus cuentas en internet con contraseñas fuertes!</h3>
   <p>Para crear una contraseña segura, sigue estos consejos:</p>
@@ -94,9 +98,11 @@
     <li>🤫 Nunca compartas tus contraseñas con nadie, ni siquiera con amigos o familiares.</li>
   </ul>
   <p>¡Sigue estos sencillos pasos y tus cuentas estarán más protegidas!</p>
+</span>
     </div>
 
     <div id="seguridadRedesSociales" class="content">
+      <span style="color: rgb(253, 252, 252)">
       <h2>Seguridad en redes sociales</h2>
       <h3>¡Navega y comparte de forma segura!</h3>
   <p>Sigue estos sencillos consejos para estar protegido en las redes sociales:</p>
@@ -110,8 +116,10 @@
     <li>🙂 Sé amable: mantén una actitud respetuosa y evita discusiones agresivas o acoso.</li>
   </ul>
   <p>¡Diviértete y comparte con tranquilidad siguiendo estas recomendaciones!</p>
+</span>
     </div>
     <div id="proteccionMalware" class="content">
+      <span style="color: rgb(253, 252, 252)">
       <h2>Protección contra malware</h2>
       <h3>¡Mantén tu dispositivo a salvo de amenazas!</h3>
   <p>El malware son programas maliciosos que pueden dañar tu computadora o robar tus datos. Sigue estos consejos para protegerte:</p>
@@ -125,6 +133,7 @@
     <li>🚫 Evita sitios web inseguros: navega únicamente en sitios web confiables y evita descargas no autorizadas.</li>
   </ul>
   <p>¡Sigue estas recomendaciones y disfruta de una experiencia en línea segura y libre de amenazas!</p>
+</span>
     </div>
 
     <div id="recursosEnlaces" class="content">
@@ -159,6 +168,10 @@
     const proteccionMalware = document.getElementById('proteccionMalware');
     const recursosEnlaces = document.getElementById('recursosEnlaces');
 
+    function cambiarFondo(seccion, imagen) {
+      seccion.style.backgroundImage = `url(${imagen})`;
+    }
+
     // Función para mostrar/ocultar el contenido
     function mostrarContenido(seccion) {
       // Ocultar todas las secciones
@@ -170,7 +183,21 @@
 
       // Mostrar la sección seleccionada
       seccion.style.display = 'block';
+      if (seccion === consejosGenerales) {
+        cambiarFondo(seccion, 'img/fondo1.jpg');
+      } else if (seccion === proteccionContrasenias) {
+        cambiarFondo(seccion, 'img/fondo2.jpg');
+      } else if (seccion === seguridadRedesSociales) {
+        cambiarFondo(seccion, 'img/9f3f4c908c972c1f06d0d137211c8de9.jpg');
+      } else if (seccion === proteccionMalware) {
+        cambiarFondo(seccion, 'img/malware.jpg');
+      } else if (seccion === recursosEnlaces) {
+        cambiarFondo(seccion, 'img/download33.jpg');
+      }
     }
+
+
+    
 
     // Agregar controladores de eventos a los enlaces
     consejosGeneralesLink.addEventListener('click', function() {
